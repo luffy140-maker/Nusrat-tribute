@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ustad Nusrat Fateh Ali Khan — The Voice of Eternity</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #f5f0df;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(8,8,8,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #8d6b2f;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #d7b45a;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #eee6cf;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: #d7b45a;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px 60px;
+    background:
+        radial-gradient(circle at center, #2b2111 0%, #0b0b0b 55%, #050505 100%);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.symbol {
+    color: #d7b45a;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 9vw, 82px);
+    line-height: 1.05;
+    color: #e2c46c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    margin-top: 18px;
+    font-size: clamp(18px, 4vw, 28px);
+    font-weight: normal;
+    color: #eee6cf;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 25px auto;
+    color: #bdb5a3;
+    font-size: 16px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    border: 1px solid #d7b45a;
+    color: #d7b45a;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #d7b45a;
+    color: #080808;
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 90px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    color: #d7b45a;
+    font-size: 34px;
+}
+
+.section-title p {
+    color: #9d978b;
+    margin-top: 8px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #111;
+    border: 1px solid #302817;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #d7b45a;
+}
+
+.card-number {
+    color: #8d6b2f;
+    font-size: 14px;
+}
+
+.card h3 {
+    color: #eee6cf;
+    margin: 8px 0;
+    font-size: 21px;
+}
+
+.card p {
+    color: #918b7e;
+    font-size: 14px;
+}
+
+.listen {
+    display: inline-block;
+    margin-top: 15px;
+    color: #d7b45a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.quote {
+    background: #100e09;
+    border-left: 3px solid #d7b45a;
+    padding: 35px 25px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.quote p {
+    font-size: 23px;
+    font-style: italic;
+    color: #e5ddca;
+}
+
+.quote span {
+    display: block;
+    margin-top: 15px;
+    color: #9d8a5c;
+}
+
+.about {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about p {
+    color: #b4ad9e;
+    margin-bottom: 18px;
+}
+
+footer {
+    border-top: 1px solid #302817;
+    text-align: center;
+    padding: 35px 20px;
+    color: #777166;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .hero h1 {
+        letter-spacing: 1px;
+    }
+
+    section {
+        padding: 70px 18px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+    <div class="logo">NUS­RAT</div>
+
+    <div>
+        <a href="#masterpieces">Music</a>
+        <a href="#gems">Hidden Gems</a>
+        <a href="#legacy">Legacy</a>
+    </div>
+</nav>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="symbol">✦</div>
+
+<h1>Ustad Nusrat<br>Fateh Ali Khan</h1>
+
+<h2>The Voice of Eternity</h2>
+
+<p>
+A tribute to the legendary voice that carried the soul of Qawwali
+across borders, generations and hearts.
+</p>
+
+<a class="button" href="#masterpieces">
+Enter the Musical Journey
+</a>
+
+</div>
+
+</section>
+
+
+<!-- MASTERPIECES -->
+
+<section id="masterpieces">
+
+<div class="section-title">
+
+<h2>Masterpieces</h2>
+
+<p>The timeless recordings that introduced millions to his voice.</p>
+
+</div>
+
+
+<div class="cards">
+
+<div class="card">
+<span class="card-number">01</span>
+<h3>Mere Rashke Qamar</h3>
+<p>One of Nusrat Sahib's most beloved performances.</p>
+<a class="listen" href="https://www.youtube.com/results?search_query=Nusrat+Fateh+Ali+Khan+Mere+Rashke+Qamar" target="_blank">▶ Listen</a>
+</div>
+
+
+<div class="card">
+<span class="card-number">02</span>
+<h3>Afreen Afreen</h3>
+<p>A mesmerizing composition celebrated around the world.</p>
+<a class="listen" href="https://www.youtube.com/results?search_query=Nusrat+Fateh+Ali+Khan+Afreen+Afreen" target="_blank">▶ Listen</a>
+</div>
+
+
+<div class="card">
+<span class="card-number">03</span>
+<h3>Tumhe Dillagi</h3>
+<p>An unforgettable expression of love and longing.</p>
+<a class="listen" href="https://www.youtube.com/results?search_query=Nusrat+Fateh+Ali+Khan+Tumhe+Dillagi" target="_blank">▶ Listen</a>
+</div>
+
+
+<div class="card">
+<span class="card-number">04</span>
+<h3>Yeh Jo Halka Halka Suroor Hai</h3>
+<p>A legendary qawwali of intoxication, devotion and emotion.</p>
+<a class="listen" href="https://www.youtube.com/results?search_query=Nusrat+Fateh+Ali+Khan+Halka+Halka+Suroor" target="_blank">▶ Listen</a>
+</div>
+
+
+<div class="card">
+<span class="card-number">05</span>
+<h3>Tere Bin Nahin Lagda</h3>
+<p>A haunting expression of separation and longing.</p>
+<a class="listen" href="https://www.youtube.com/results?search_query=Nusrat+Fateh+Ali+Khan+Tere+Bin+Nahin+Lagda" target="_blank">▶ Listen</a>
+</div>
+
+
+<div class="card">
+<span class="card-number">06</span>
+<h3>Sanson Ki Mala</h3>
+<p>A spiritual performance filled with intensity and devotion.</p>
+<a class="listen" href="https://www.youtube.com/results?search_query=Nusrat+Fateh+Ali+Khan+Sanson+Ki+Mala" target="_blank">▶ Listen</a>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- HIDDEN GEMS -->
+
+<section id="gems">
+
+<div class="section-title">
+
+<h2>💎 Hidden Gems</h2>
+
+<p>
+For those who want to go beyond the famous songs.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+<div class="card">
+<h3>Long-Form Qawwalis</h3>
+<p>
+Discover extended performances where Nusrat Sahib's voice,
+rhythm and improvisation unfold gradually.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Live Performances</h3>
+<p>
+Explore the raw energy of live mehfils and concert recordings.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Rare Recordings</h3>
+<p>
+A future collection dedicated to lesser-known treasures from
+his enormous catalogue.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Sufi Masterpieces</h3>
+<p>
+Poetry, devotion and music brought together through the
+Qawwali tradition.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- QUOTE -->
+
+<section>
+
+<div class="quote">
+
+<p>
+"Music is the language of the soul."
+</p>
+
+<span>— A tribute to Ustad Nusrat Fateh Ali Khan</span>
+
+</div>
+
+</section>
+
+
+<!-- LEGACY -->
+
+<section id="legacy">
+
+<div class="section-title">
+
+<h2>The Legend</h2>
+
+<p>A voice that changed the world of Qawwali.</p>
+
+</div>
+
+
+<div class="about">
+
+<p>
+Ustad Nusrat Fateh Ali Khan was one of the greatest Qawwali
+singers of the modern era. His extraordinary voice, improvisation
+and spiritual intensity introduced generations of listeners around
+the world to the power of South Asian Sufi music.
+</p>
+
+<p>
+His recordings continue to inspire musicians and listeners across
+Pakistan, India and far beyond.
+</p>
+
+<p>
+This website is a fan-made tribute created to celebrate his music,
+legacy and contribution to the world of Qawwali.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 — A Tribute to Ustad Nusrat Fateh Ali Khan
+</p>
+
+<p>
+Made with ❤️ for the music of a legend.
+</p>
+
+</footer>
+
+</body>
+</html>
